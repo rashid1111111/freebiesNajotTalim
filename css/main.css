@@ -1,0 +1,254 @@
+:root {
+  --yellow-color: #ffd500;
+  --input-color: #f5f8f9;
+  --card-color: #c7c7c7;
+  --green-color: #60e6c5;
+  --title-color: #383838;
+}
+
+@font-face {
+  font-family: "Actor";
+  src: url("../fonts/Actor-Regular.woff2") format("woff2"),
+    url("../fonts/Actor-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  font-family: "Actor";
+  font-weight: normal;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Main content */
+.main-content {
+}
+
+.main-inner {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 21.25px;
+}
+
+.hero {
+  padding: 80px 50px 60px;
+  background-color: var(--yellow-color);
+  text-align: center;
+}
+
+.hero-info {
+  width: 176px;
+  padding-top: 176px;
+  background-image: url("../images/hero.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--title-color);
+}
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--title-color);
+}
+
+.hero-link {
+  display: inline-block;
+}
+
+.next-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.registration {
+  padding: 53px 74px 55px 72px;
+  background-color: #fff;
+}
+
+.site-form {
+  width: 260px;
+}
+
+.form-inner {
+  display: flex;
+  align-items: center;
+}
+
+.form-inner:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.form-title {
+  width: 40px;
+  margin: 0;
+  margin-right: 27px;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #373d40;
+}
+
+.gender-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.gender-label {
+  display: flex;
+  align-items: center;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #b1bfcd;
+}
+
+.gender-label:first-child {
+  margin-right: 20px;
+}
+
+.gender-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 11px;
+  width: 27px;
+  height: 27px;
+  background-color: #f5f8f9;
+  border-radius: 50%;
+}
+
+.male-icon {
+  background-image: url("../images/male-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gender-male:checked .gender-icon {
+  background-color: var(--yellow-color);
+}
+
+.gender-label:checked .gender-icon {
+  background-color: var(--yellow-color);
+}
+
+.female-icon {
+  background-image: url("../images/female-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-input {
+  display: inline-block;
+  width: 190px;
+  padding: 5px 10px;
+  border: none;
+  background: var(--input-color);
+  border-radius: 2.64604px;
+}
+
+.form-input::placeholder {
+  font-size: 7.4089px;
+  line-height: 9px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.card-label {
+  display: flex;
+  align-items: center;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #373d40;
+}
+
+.card-label:not(:last-child) {
+  margin-right: 11px;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/card-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--card-color);
+  border-radius: 50%;
+}
+
+.form-btn {
+  padding: 9px 25px;
+  font-size: 7.4089px;
+  border: none;
+  line-height: 9px;
+  border-radius: 2.64604px;
+}
+
+.form-btn-wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn-cencel {
+  color: #373d40;
+  background-color: var(--input-color);
+}
+
+.btn-save {
+  color: #fff;
+  background: #60e6c5;
+}
