@@ -140,6 +140,7 @@ body {
 
 .gender-label {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   font-size: 7.4089px;
   line-height: 9px;
@@ -167,11 +168,11 @@ body {
   background-position: center;
 }
 
-.gender-male:checked .gender-icon {
+.gender-male:checked + .gender-icon {
   background-color: var(--yellow-color);
 }
 
-.gender-label:checked .gender-icon {
+.gender-male:checked + .gender-icon {
   background-color: var(--yellow-color);
 }
 
@@ -184,9 +185,14 @@ body {
 .form-input {
   display: inline-block;
   width: 190px;
-  padding: 5px 10px;
+  padding: 8px 10px;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #373D40;
   border: none;
-  background: var(--input-color);
+  border: 0.586985px solid var(--input-color);
+  border-radius: 2.64604px;
+  background-color: var(--input-color);
   border-radius: 2.64604px;
 }
 
@@ -197,6 +203,8 @@ body {
 
 .form-input:focus {
   outline: none;
+  border-color: #CAD7DD;
+  caret-color: #4A90E2;
 }
 
 .card-wrapper {
@@ -207,9 +215,14 @@ body {
 .card-label {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   font-size: 7.4089px;
   line-height: 9px;
   color: #373d40;
+}
+
+.card-input:checked + .card-icon {
+  background-color:  #66ff66;
 }
 
 .card-label:not(:last-child) {

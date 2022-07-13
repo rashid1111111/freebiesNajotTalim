@@ -39,8 +39,9 @@
               <input
                 class="form-input"
                 type="text"
-                name="name"
+                name="username"
                 placeholder="Kendall Jenner"
+                aria-label="username input"
                 required
               />
             </div>
@@ -48,30 +49,39 @@
               <p class="form-title">Gender</p>
               <div class="gender-wrapper">
                 <label class="gender-label">
-                  <span class="gender-icon male-icon"></span>
                   <input
                     class="gender-male visually-hidden"
                     type="radio"
                     name="gender"
-                  />Male
+                    aria-label="gender input"
+                    value="male"
+                    required
+                  />
+                  Male
+                  <span class="gender-icon male-icon"></span>
                 </label>
                 <label class="gender-label">
-                  <span class="gender-icon female-icon"></span>
                   <input
                     class="gender-male visually-hidden"
                     type="radio"
                     name="gender"
-                  />Female
+                    aria-label="gender input"
+                    value="female"
+                    required
+                  />
+                  Female
+                  <span class="gender-icon female-icon"></span>
                 </label>
               </div>
             </div>
             <div class="form-inner">
               <p class="form-title">Date of Birth</p>
               <input
-                class="form-input"
+                class="form-input calendar"
                 type="date"
                 name="date"
                 placeholder="01/02/1983"
+                aria-label="date input"
                 required
               />
             </div>
@@ -82,6 +92,7 @@
                 type="email"
                 name="email"
                 placeholder="kendall@emailcom"
+                aria-label="email input"
                 required
               />
             </div>
@@ -92,6 +103,7 @@
                 type="number"
                 name="number"
                 placeholder="+91 98765 43210"
+                aria-label="number input"
                 required
               />
             </div>
@@ -102,6 +114,7 @@
                 type="text"
                 name="id"
                 placeholder="576802-ERD0348 45"
+                aria-label="id input"
                 required
               />
             </div>
@@ -109,39 +122,45 @@
               <p class="form-title">Membership</p>
               <div class="card-wrapper">
                 <label class="card-label">
-                  <span class="card-icon icon-classic"></span>
                   <input
-                    class="card-input visually-hidden"
-                    type="radio"
-                    name="card"
-                    required
+                  class="card-input visually-hidden"
+                  type="radio"
+                  name="card"
+                  aria-label="card radio input"
+                  value="classic"
+                  required
                   />
                   Classic
+                  <span class="card-icon icon-classic"></span>
                 </label>
                 <label class="card-label">
-                  <span class="card-icon icon-silver"></span>
                   <input
-                    class="card-input visually-hidden"
-                    type="radio"
-                    name="card"
-                    required
+                  class="card-input visually-hidden"
+                  type="radio"
+                  name="card"
+                  aria-label="card radio input"
+                  value="silver"
+                  required
                   />
                   Silver
+                  <span class="card-icon icon-silver"></span>
                 </label>
                 <label class="card-label">
-                  <span class="card-icon icon-gold"></span>
                   <input
-                    class="card-input visually-hidden"
-                    type="radio"
-                    name="card"
-                    required
+                  class="card-input visually-hidden"
+                  type="radio"
+                  name="card"
+                  aria-label="card radio input"
+                  value="gold"
+                  required
                   />
                   Gold
+                  <span class="card-icon icon-gold"></span>
                 </label>
               </div>
             </div>
             <div class="form-btn-wrapper">
-              <button class="form-btn btn-cencel" type="submit">CANCEL</button>
+              <button class="form-btn btn-cencel" type="reset">CANCEL</button>
               <button class="form-btn btn-save" type="submit">SAVE</button>
             </div>
           </form>
